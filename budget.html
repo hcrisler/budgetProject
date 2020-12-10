@@ -14,13 +14,15 @@
             <h1>Budget Buddy</h1>
         </div>
         
-        <div id="form">
-            <h2>Weekly Budget</h2>
+        <div id="weekly_budget_section">
+            <h2>Weekly Budget:</h2>
+            <p id="weekly_budget"></p>
             <form id="enterBudget">
                 <input type="number" id="budget_input" placeholder="Enter Weekly Budget" />
-                <button id="update_budget">Submit</button> 
+                <button id="update_budget">Update</button> 
             </form>
-
+        </div>
+        <div id="enter_expense_section">
             <form id="enterExpense">
                 <h2>Purchase Amount</h2>
                 <input type="number" id="purchase_input" placeholder="Enter Purchase Amount" />
@@ -40,16 +42,16 @@
             <div id="expenseSummary">
                 <h2>Spending Summary</h2>
             <ul id="summaryList">
-                <li id="entertainment">Entertainment <span></span></li>
-                <li id="food">Food</li>
-                <li id="clothing">Clothing</li>
-                <li id="bills">Bills</li>
-                <li id="total">TOTAL</li>
+                <li id="entertainment">Entertainment <span id="total_entertainment"></span></li>
+                <li id="food">Food <span id="total_food"></span></li>
+                <li id="clothing">Clothing <span id="total_clothing"></span></li>
+                <li id="bills">Bills <span id="total_bills"></span></li>
+                <li id="total">TOTAL <span id="total_spent"></span></li>
             </ul>
             </div>
             
             <div id="balance"> 
-                <h2>Balance Remaining</h2>
+                <h2>Balance Remaining <span id="remaining_balance"></span></h2>
             </div>
         </div>
         
