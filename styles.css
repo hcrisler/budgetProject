@@ -1,1 +1,87 @@
-Style
+#header{
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: rgb(157, 231, 157);
+ }
+
+ul{
+    list-style: none;
+}
+
+  #weekly_budget_section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     border-radius: 15px;
+      border: white;
+      border-style: solid;
+      padding-bottom: 20px;
+      padding-left: 20px;
+  }
+
+  #enter_expense_section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    border-radius: 15px;
+    border: white;
+    border-style: solid;
+    padding-bottom: 20px;
+    padding-left: 20px; 
+  }
+
+
+   #summary{
+    display: flex;   
+    flex-direction: column;
+    justify-content: center; 
+    background-color: rgb(109, 163, 109);
+      border-radius: 15px;
+      margin-top: 20px;
+      border: rgb(109, 163, 109);
+      border-style: solid;
+      padding-bottom: 20px;
+      padding-left: 20px;  
+   }
+  
+   #expenseSummary{
+      display: flex; 
+       align-items: center; 
+      justify-content: center;  
+      flex-direction: column; 
+     
+   }  
+   
+   #balance{
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    background-color: rgb(109, 163, 109);
+    margin-top: 20px;
+    border-radius: 15px;
+    border: rgb(109, 163, 109);
+    border-style: solid;
+    padding-bottom: 20px;
+    padding-left: 20px; 
+   }
+
+@media only screen and (min-width: 768px) {
+
+    #summary{
+        display:block;
+        float: right;
+        width: 45%;
+        margin: 20px;
+    }
+
+    #entrySection{
+        display:block;
+        float: left;
+        width: 45%;
+        margin: 20px;
+    }
