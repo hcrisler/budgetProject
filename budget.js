@@ -21,7 +21,7 @@ let updatedBills = 0;
 
 function setBudget(event) {
     event.preventDefault();
-    weeklyAmount += budget_input.value;
+    weeklyAmount = budget_input.value;
     weekly_budget.innerText = "$" + weeklyAmount;
     budget_input.value = "";
     updateBalance();
