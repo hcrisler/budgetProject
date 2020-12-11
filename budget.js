@@ -28,10 +28,26 @@ function updateBalance() {
 }
 
 function addExpense(event) {
+
+    if (category_selection.value === 'Entertainment') {
     event.preventDefault();
     newExpense = purchase_input.value;
-    total_spent.innerText = "$" + newExpense;
+    total_entertainment.innerText = "$" + newExpense;
     purchase_input.value = "";
-    
+    } else if (category_selection.value === 'Food') {
+        event.preventDefault();
+        newExpense = purchase_input.value;
+        total_food.innerText = "$" + newExpense;
+        purchase_input.value = "";
+    } else if (category_selection.value === 'Clothing') {
+        event.preventDefault();
+        newExpense = purchase_input.value;
+        total_clothing.innerText = "$" + newExpense;
+        purchase_input.value = "";
+    } else if (category_selection.value === 'Bills') {
+        event.preventDefault();
+        newExpense = purchase_input.value;
+        total_bills.innerText = "$" + newExpense;
+        purchase_input.value = "";
+    }
 }
-
