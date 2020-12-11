@@ -19,7 +19,6 @@ let updatedClothing = 0;
 let updatedBills = 0;
 let totalExpenses = 0;
 
-
 function setBudget(event) {
     event.preventDefault();
     weeklyAmount = budget_input.value;
@@ -29,8 +28,9 @@ function setBudget(event) {
 }
 
 function maybeAddExpense(event){
-   let newExpense = purchase_input.value;
-   newExpense = parseInt(newExpense);
+    event.preventDefault();
+    let newExpense = purchase_input.value;
+    newExpense = parseInt(newExpense);
     if (balance - newExpense < 0){
         alert ("No more money :(");
     }
