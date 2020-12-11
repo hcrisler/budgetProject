@@ -40,21 +40,7 @@ function maybeAddExpense(event){
 }
 
 function addExpense(event) {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    // event.preventDefault();
-    // newExpense = purchase_input.value;
-    // total_spent.innerText = "$" + newExpense;
-    // purchase_input.value = "";
     
-    if (category_selection.value === "Entertainment"){
-        event.preventDefault();
-        newExpense = purchase.input.value;
-        total_entertainment.innerText = "$" + newExpense;
-=======
-
-=======
->>>>>>> 35b456dc5ff9bc4159acb6ba6977a0290152de62
     if (category_selection.value === 'Entertainment') {
     event.preventDefault();
     newExpense = purchase_input.value;
@@ -82,7 +68,6 @@ function addExpense(event) {
         newExpense = parseInt(newExpense);
         updatedBills += newExpense;
         total_bills.innerText = "$" + updatedBills;
->>>>>>> cdbb94e6567cfc80e6970550cf76828a92c8a586
         purchase_input.value = "";
     }
 
