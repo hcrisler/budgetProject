@@ -1,5 +1,5 @@
 document.querySelector('#update_budget').addEventListener("click", setBudget);
-document.querySelector('#update_expenses').addEventListener("click", addExpense);
+document.querySelector('#update_expenses').addEventListener("click", maybeAddExpense);
 
 let weekly_budget = document.getElementById("weekly_budget");
 let budget_input = document.getElementById("budget_input");
@@ -17,6 +17,7 @@ let updatedEntertainment =0;
 let updatedFood = 0;
 let updatedClothing = 0;
 let updatedBills = 0;
+let totalExpenses = 0;
 
 
 function setBudget(event) {
@@ -27,12 +28,19 @@ function setBudget(event) {
     updateBalance();
 }
 
-function updateBalance() {
-    balance = weeklyAmount - expenseTotal;
-    remaining_balance.innerText = "$" + balance;
+function maybeAddExpense(event){
+   let newExpense = purchase_input.value;
+   newExpense = parseInt(newExpense);
+    if (balance - newExpense < 0){
+        alert ("No more money :(");
+    }
+    else{
+        addExpense(event);
+    }
 }
 
 function addExpense(event) {
+<<<<<<< HEAD
 <<<<<<< HEAD
     // event.preventDefault();
     // newExpense = purchase_input.value;
@@ -45,6 +53,8 @@ function addExpense(event) {
         total_entertainment.innerText = "$" + newExpense;
 =======
 
+=======
+>>>>>>> 35b456dc5ff9bc4159acb6ba6977a0290152de62
     if (category_selection.value === 'Entertainment') {
     event.preventDefault();
     newExpense = purchase_input.value;
@@ -59,7 +69,6 @@ function addExpense(event) {
         updatedFood += newExpense;
         total_food.innerText = "$" + updatedFood;
         purchase_input.value = "";
-        
     } else if (category_selection.value === 'Clothing') {
         event.preventDefault();
         newExpense = purchase_input.value;
@@ -76,6 +85,14 @@ function addExpense(event) {
 >>>>>>> cdbb94e6567cfc80e6970550cf76828a92c8a586
         purchase_input.value = "";
     }
+
+    totalExpenses = updatedEntertainment + updatedFood + updatedClothing + updatedBills;
+    total_spent.innerText = "$" + totalExpenses;
+
+    updateBalance();
 }
 
-
+function updateBalance() {
+    balance = weeklyAmount - totalExpenses;
+    remaining_balance.innerText = "$" + balance;
+}
