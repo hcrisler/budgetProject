@@ -28,10 +28,16 @@ function updateBalance() {
 }
 
 function addExpense(event) {
-    event.preventDefault();
-    newExpense = purchase_input.value;
-    total_spent.innerText = "$" + newExpense;
-    purchase_input.value = "";
+    // event.preventDefault();
+    // newExpense = purchase_input.value;
+    // total_spent.innerText = "$" + newExpense;
+    // purchase_input.value = "";
     
+    if (category_selection.value === "Entertainment"){
+        event.preventDefault();
+        newExpense = purchase.input.value;
+        total_entertainment.innerText = "$" + newExpense;
+        purchase_input.value = "";
+    }
 }
 
