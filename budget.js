@@ -40,6 +40,7 @@ function maybeAddExpense(event) {
   }
 }
 
+<<<<<<< HEAD
 function addExpense(event) {
   if (category_selection.value === "Entertainment") {
     event.preventDefault();
@@ -77,6 +78,50 @@ function addExpense(event) {
 
   updateBalance();
 }
+=======
+
+    function addExpense(event) {
+        newExpense = purchase_input.value;
+        if(!Number.isNaN(newExpense)) {
+            if (category_selection.value === 'Entertainment') {
+                event.preventDefault();
+                newExpense = purchase_input.value;
+                newExpense = parseInt(newExpense);
+                updatedEntertainment += newExpense;
+                total_entertainment.innerText = "$" + updatedEntertainment;
+                purchase_input.value = "";
+                } else if (category_selection.value === 'Food') {
+                    event.preventDefault();
+                    newExpense = purchase_input.value; 
+                    newExpense = parseInt(newExpense);
+                    updatedFood += newExpense;
+                    total_food.innerText = "$" + updatedFood;
+                    purchase_input.value = "";
+                } else if (category_selection.value === 'Clothing') {
+                    event.preventDefault();
+                    newExpense = purchase_input.value;
+                    newExpense = parseInt(newExpense);
+                    updatedClothing += newExpense;
+                    total_clothing.innerText = "$" + updatedClothing;
+                    purchase_input.value = "";
+                } else if (category_selection.value === 'Bills') {
+                    event.preventDefault();
+                    newExpense = purchase_input.value;
+                    newExpense = parseInt(newExpense);
+                    updatedBills += newExpense;
+                    total_bills.innerText = "$" + updatedBills;
+                    purchase_input.value = "";
+                }
+            
+                totalExpenses = updatedEntertainment + updatedFood + updatedClothing + updatedBills;
+                total_spent.innerText = "$" + totalExpenses;
+            
+                updateBalance();
+        }
+        
+    };
+             
+>>>>>>> 308dd54d0c72fa8ed26b556b7cbf31520209d58e
 
 function updateBalance() {
   balance = weeklyAmount - totalExpenses;

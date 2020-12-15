@@ -9,12 +9,37 @@
 }
 
 body {
+<<<<<<< HEAD
   font-family: "Open Sans", sans-serif;
   background: linear-gradient(to bottom, #66ffff 42%, #00ff99 100%);
   background-repeat: no-repeat;
   height: 100vh;
   margin: 40px;
 }
+=======
+    font-family: "Open Sans", sans-serif;
+     background: linear-gradient(to bottom, #66ffff 42%, #00ff99 100%);
+     /* background-repeat: no-repeat; */
+     height: 100vh;
+     margin: 40px;
+ }
+
+ul{
+    list-style: none;
+}
+
+  #weekly_budget_section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     border-radius: 15px;
+      border:#ccffff;
+      background-color: #ccffff;
+      border-style: solid;
+      padding-bottom: 20px;
+      padding-left: 20px;
+  }
+>>>>>>> 308dd54d0c72fa8ed26b556b7cbf31520209d58e
 
 ul {
   list-style: none;
@@ -45,6 +70,7 @@ ul {
   padding-left: 20px;
 }
 
+<<<<<<< HEAD
 #summary {
   display: flex;
   flex-direction: column;
@@ -85,6 +111,12 @@ ul {
   margin-left: 60px;
   color: #0066ff;
 }
+=======
+  #weekly_budget{
+    color: #0066ff;
+    font-weight: bold;
+  }
+>>>>>>> 308dd54d0c72fa8ed26b556b7cbf31520209d58e
 
 #total_bills {
   margin-left: 90px;
