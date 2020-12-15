@@ -76,22 +76,35 @@ ul{
 
    #total_entertainment{
         margin-left: 20px;
+        color: #0066ff;
    }
 
    #total_food{
         margin-left: 83px;
+        color: #0066ff;
    }
    
    #total_clothing{
     margin-left: 60px;
+    color: #0066ff;
    }
    
    #total_bills{
     margin-left: 90px;
+    color: #0066ff;
    }
 
    #total_spent{
     margin-left: 65px;
+    color: #0066ff;
+  }
+
+  #remaining_balance{
+    color: #0066ff;
+  }
+
+  #weekly_budget{
+    color: #0066ff;
   }
 
    #entertainment{
