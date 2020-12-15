@@ -39,40 +39,6 @@ function maybeAddExpense(event){
     }
 }
 
-<<<<<<< HEAD
-=======
-function addExpense(event) {
-    
-    if (category_selection.value === 'Entertainment') {
-    event.preventDefault();
-    newExpense = purchase_input.value;
-    newExpense = parseInt(newExpense);
-    updatedEntertainment += newExpense;
-    total_entertainment.innerText = "$" + updatedEntertainment;
-    purchase_input.value = "";
-    } else if (category_selection.value === 'Food') {
-        event.preventDefault();
-        newExpense = purchase_input.value; 
-        newExpense = parseInt(newExpense);
-        updatedFood += newExpense;
-        total_food.innerText = "$" + updatedFood;
-        purchase_input.value = "";
-    } else if (category_selection.value === 'Clothing') {
-        event.preventDefault();
-        newExpense = purchase_input.value;
-        newExpense = parseInt(newExpense);
-        updatedClothing += newExpense;
-        total_clothing.innerText = "$" + updatedClothing;
-        purchase_input.value = "";
-    } else if (category_selection.value === 'Bills') {
-        event.preventDefault();
-        newExpense = purchase_input.value;
-        newExpense = parseInt(newExpense);
-        updatedBills += newExpense;
-        total_bills.innerText = "$" + updatedBills;
-        purchase_input.value = "";
-    }
->>>>>>> f6ab432df55d2b8b135611976879e8fbf93280ab
 
     function addExpense(event) {
         newExpense = purchase_input.value;

@@ -12,8 +12,8 @@
 body {
     font-family: "Open Sans", sans-serif;
      background: linear-gradient(to bottom, #66ffff 42%, #00ff99 100%);
-     background-repeat: no-repeat;
-     height: 99%;
+     /* background-repeat: no-repeat; */
+     height: 100vh;
      margin: 40px;
  }
 
