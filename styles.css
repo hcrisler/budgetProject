@@ -1,11 +1,20 @@
 #header{
     display: flex;
     justify-content: center;
+    border:#ccffff;
+    background-color: #ccffff;
+    border-radius: 15px;
+    margin: 20px;
+    /* width: 50%; */
+    
 }
 
 body {
     font-family: "Open Sans", sans-serif;
-    background-color: rgb(157, 231, 157);
+     background: linear-gradient(to bottom, #66ffff 42%, #00ff99 100%);
+     background-repeat: no-repeat;
+     height: 99%;
+     margin: 40px;
  }
 
 ul{
@@ -17,7 +26,8 @@ ul{
     align-items: center;
     justify-content: center;
      border-radius: 15px;
-      border: white;
+      border:#ccffff;
+      background-color: #ccffff;
       border-style: solid;
       padding-bottom: 20px;
       padding-left: 20px;
@@ -29,7 +39,8 @@ ul{
     justify-content: center;
     margin-top: 20px;
     border-radius: 15px;
-    border: white;
+    border: #ccffff;
+    background-color: #ccffff;
     border-style: solid;
     padding-bottom: 20px;
     padding-left: 20px; 
@@ -39,36 +50,103 @@ ul{
     display: flex;   
     flex-direction: column;
     justify-content: center; 
-    background-color: rgb(109, 163, 109);
+    background-color:#ccffff;
       border-radius: 15px;
       margin-top: 20px;
-      border: rgb(109, 163, 109);
+      border:#ccffff;
       border-style: solid;
       padding-bottom: 20px;
       padding-left: 20px;  
    }
   
-   #expenseSummary{
+   #spendingSummary{
       display: flex; 
-       align-items: center; 
-      justify-content: center;  
-      flex-direction: column; 
+      text-align: center;
+      align-items: center;  
+    justify-content: center;    
+      
    }  
+    
+    #summaryList{
+        display: flex;
+        flex-direction: column; 
+        justify-content: space-between;
+
+   }
+
+   #total_entertainment{
+        margin-left: 20px;
+        color: #0066ff;
+   }
+
+   #total_food{
+        margin-left: 83px;
+        color: #0066ff;
+   }
    
+   #total_clothing{
+    margin-left: 60px;
+    color: #0066ff;
+   }
+   
+   #total_bills{
+    margin-left: 90px;
+    color: #0066ff;
+   }
+
+   #total_spent{
+    margin-left: 65px;
+    color: #0066ff;
+  }
+
+  #remaining_balance{
+    color: #0066ff;
+  }
+
+  #weekly_budget{
+    color: #0066ff;
+  }
+
+   #entertainment{
+       padding: 10px;
+       text-align: left;
+   }
+   
+   #food{
+    padding: 10px;
+    margin: 0;
+   }
+
+   #clothing{
+      padding: 10px;
+   }
+   
+   #bills{
+       padding:10px;
+   }
+
+   #total{
+    padding:10px;
+    font-weight: bold;
+}
+
    #balance{
     display: flex;
     align-items: center;
     justify-content: center;  
-    background-color: rgb(109, 163, 109);
+    background-color:#ccffff;
     margin-top: 20px;
     border-radius: 15px;
-    border: rgb(109, 163, 109);
+    border: #ccffff;
     border-style: solid;
     padding-bottom: 20px;
     padding-left: 20px; 
    }
 
 @media only screen and (min-width: 768px) {
+    body{
+        height: 100vh;
+    }
 
     #summary{
         display:block;
