@@ -94,6 +94,21 @@ ul{
   color: #0066ff;
  }
 
+ #total_gas{
+  margin-left: 90px;
+  color: #0066ff;
+ }
+
+ #total_home {
+  margin-left: 77px;
+  color: #0066ff;
+ }
+
+ #total_other{
+  margin-left: 80px;
+  color: #0066ff;
+ }
+
  #total_spent{
   margin-left: 65px;
   color: #0066ff;
@@ -125,6 +140,18 @@ ul{
  #bills{
      padding:10px;
  }
+
+ #gas{
+  padding:10px;
+}
+
+#home{
+  padding:10px;
+}
+
+#other{
+  padding:10px;
+}
 
  #total{
   padding:10px;
